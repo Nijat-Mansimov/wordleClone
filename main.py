@@ -38,7 +38,7 @@ def input_():
         if letter[i] == new_letter[i]:
             new_letter[i] += "*"
 
-        elif letter[i] != new_letter[i] and new_letter[i] in letter:
+        elif letter[i] != new_letter[i] and new_letter[i] in letter and new_letter[i] + "*" not in new_letter:
             if b == 0 and letter.count(new_letter[i]) == 1:
                 new_letter[i] += "^"
                 b = 1
